@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+.Home{
+    background: url("./bg.png")  rgba(0, 0, 0, 0.65);
+    background-size: cover;
+    width: 100%;
+    height: 961px;
+}
+Nav a{
+    color: white !important;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500 !important;
+font-size: 16px !important;
+line-height: 16px;
+padding-left: 2em !important;
+}
+.text h1{
+    font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 400;
+font-size: 90px;
+line-height: 130px;
+/* or 100% */
+
+
+color: #FFFFFF;
+
+}
+.text p{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 30px;
+/* or 150% */
+
+
+color: #938E8E;
+}
+.text .o{
+    background: #D3AD7F;
+border-radius: 6px;
+font-size: 15px;
+border: none;
+width: 141.69px;
+}
+.text .t{
+    border: 1px solid #D3AD7F;
+border-radius: 6px;
+background:none;
+font-size: 15px;
+margin-left: 1em;
+width: 141.69px;
+}
+.text{
+    margin-left: 20em;
+    margin-top: 180px;
+}
+.cofc{
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card-carousel {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin: 100px auto;
+    align-items: center;
+    position: relative;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .card {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+    padding: 30px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    height: 200px;
+    transition: all 0.75s ease;
+    opacity: 0;
+    position: absolute;
+    transform: scale(0.85) translateY(50px);
   }
-  to {
-    transform: rotate(360deg);
+  
+  .card h2,
+  .card p {
+    line-height: 1.5;
+    margin: 0;
   }
-}
+  
+  .card.active {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .card.next {
+    opacity: 1;
+    z-index: 0;
+  }
+  
+  .card.prev {
+    transform: scale(1.1) translateY(-50px);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide{
+    position: relative;
+    background: black;
+    margin: 1em;
+    min-width: 571.333px !important;
+  }
+  .keen-slider:not([data-keen-slider-disabled]){
+    background-color: #191919;
+  }
+  .keen-slider__slide .i5{
+    position: absolute;
+    left: 20%;
+    top:3%;
+  }
+  .keen-slider__slide h5{
+    display: inline-block;
+    color: white;
+    margin-left: 14%;
+    padding-top: 47%;
+  }
+  .keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide{
+    height: 305px !important;
+  }
+  .side{
+    width: 231px;
+    position: relative;
+    left: 19em;
+    top: -16em;
+  }
+  .side p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #938E8E;
+  }

@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Home from './components/home';
+import About from './components/About';
+import Manu from './components/Manu';
+import Ex from './components/EX';
+import cofc from './cofc.png';
+import UncontrolledExample from './components/client';
+import CardCarousel from './components/cardsli';
+import Slidit from './components/slidit';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Home/>
+     <About/>
+     <Manu/>
+     <Ex/>
+     <img className='cofc' src={cofc}/>
+<CardCarousel/>
+<Slidit/>
     </div>
   );
 }
